@@ -42,12 +42,12 @@ BBEPAPER bbep(EP29Rv2_128x296);
 - Text + circles + bitmap (three_color example content, rotation 270): correct
 
 <br>
-![bb_epaper](/ep29rv2_hardware.jpg?raw=true "WeAct 2.9 display module with ESP32")
+![bb_epaper](doc/EP29Rv2_128x296_hardware.jpg)
 <br>
 Hardware: WeAct Studio 2.9" 128x296 B/W/R e-paper module (GDEM029C90, SSD1680) driven by an ESP32-C3 SuperMini. Pins: CS=7, DC=9, RES=8, BUSY=5, MOSI=6, SCLK=4.
 <br>
-![bb_epaper](/ep29rv2_bwr_test.jpg?raw=true "B/W/R test pattern")
+![bb_epaper](doc/EP29Rv2_128x296_test_pattern.jpg)
 <br>
-![bb_epaper](/ep29rv2_bwr_lines.jpg?raw=true "B/W text lines with red numbers")
+![bb_epaper](doc/EP29Rv2_128x296_text_lines.jpg)
 <br>
 Full-screen black/white/red fills run correct with no Y offset or garbage rows; alternating black/red text lines display correctly across the whole panel.
