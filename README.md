@@ -48,11 +48,15 @@ See WiKi and example code for how to use the library.<br>
 
 A unique feature of the library is that you can set the panel type at run-time. I created a testing tool which makes use of this feature (photo below). It allows you to run diagnostic tests on any of the supported panels and hot-swap them without restarting.
 <br>
-![bb_epaper](/epd_panel_tester.jpg?raw=true "panel tester")
+![bb_epaper](/ep29rv2_hardware.jpg?raw=true "WeAct 2.9\" 128x296 module + ESP32-C3 SuperMini")
 <br>
-In the photo below, the custom font and ellipse were drawn without using a local copy of the frame buffer (aka bufferless). bb_epaper offers some unique features like these when working on very constrained devices (insufficient RAM to hold a copy of the graphics). 
+Hardware: WeAct Studio 2.9" 128x296 B/W/R e-paper module (GDEM029C90, SSD1680) driven by an ESP32-C3 SuperMini. Pins: CS=7, DC=9, RES=8, BUSY=5, MOSI=6, SCLK=4.
 <br>
-![bb_epaper](/bb_epaper_demo.jpg?raw=true "bb_epaper")
+![bb_epaper](/ep29rv2_bwr_test.jpg?raw=true "B/W/R test pattern")
+<br>
+![bb_epaper](/ep29rv2_bwr_lines.jpg?raw=true "B/W text lines with red numbers")
+<br>
+Full-screen black/white/red fills run correct with no Y offset or garbage rows; alternating black/red text lines display correctly across the whole panel.
 <br>
 
 Thank you to the Open Home Foundation for being a sponsor of this work:<br>
